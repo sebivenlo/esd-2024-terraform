@@ -2,19 +2,21 @@
 
 ## Description
 
-## **Todo!!!**
+### **Todo!!!**
 
 
-# Project Structure
 
 
-## **Todo!!!**
+## Project Structure
+
+### **Todo!!!**
 
 
-# **Setting up Development Environment**
 
 
-## **Requirements**
+## **Setting up Development Environment**
+
+### **Requirements**
 1. Docker is required for this project.
 2. Terraform needs to be installed:
     - For Mac users via Homebrew: brew install terraform
@@ -24,9 +26,7 @@
         3. Go to the System environment variables and add in PATH: C:\terraform\
         4. Check if it gets found: terraform --version
 
-
-## **Build**
-
+### **Build**
 
 1. Build Gitlab with Docker:
     - First you need to adjust the docker-compose file for your Arch type. Adjust between AMD64 or ARM64 Chip.
@@ -37,7 +37,8 @@
     - It takes a while for Gitlab to boot, wait some minutes!
 
 
-# ESD template
+
+## ESD template
 
 Please make sure all artifacts are in this GitHub repository.  
 That includes:
