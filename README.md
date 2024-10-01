@@ -1,6 +1,5 @@
 # **Getting-Started**
 
----
 ## Description
 
 ## **Todo!!!**
@@ -8,14 +7,12 @@
 
 # Project Structure
 
----
 
 ## **Todo!!!**
 
 
 # **Setting up Development Environment**
 
----
 
 ## **Requirements**
 1. Docker is required for this project.
@@ -30,7 +27,6 @@
 
 ## **Build**
 
----
 
 1. Build Gitlab with Docker:
     - First you need to adjust the docker-compose file for your Arch type. Adjust between AMD64 or ARM64 Chip.
