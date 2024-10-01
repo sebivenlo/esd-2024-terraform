@@ -26,17 +26,38 @@
         3. Go to the System environment variables and add in PATH: C:\terraform\
         4. Check if it gets found: terraform --version
 
-### **Build**
+### **Build & Commands**
 
 1. Build Gitlab with Docker:
     - First you need to adjust the docker-compose file for your Arch type. Adjust between AMD64 or ARM64 Chip.
     - Start/Build Docker:
-     ```
-     docker-compose up -d
-     ```
+       ```
+       docker-compose up -d
+       ```
     - It takes a while for Gitlab to boot, wait some minutes!
+    - For root access, reset the gitlab root user:
+       ```
+       docker exec -it gitlab gitlab-rake "gitlab:password:reset[root]"
+       ```
 
-
+2. Terraform: 
+    - Initialize terraform for this project with:
+       ```
+       terraform init
+       ```
+    - Now you can start using terraform!
+    - If you make changes to your configuration, you can review and generate an execution plan:   
+       ```
+       terraform plan
+       ```
+    - To apply the changes permanently, run:
+       ```
+       terraform apply
+       ```
+    - If you need to destroy the applied infrastructure, use:
+       ```
+       terraform destroy
+       ```
 
 ## ESD template
 
