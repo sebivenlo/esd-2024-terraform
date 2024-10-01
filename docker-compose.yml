@@ -1,17 +1,22 @@
+# Use "zengxs/gitlab:latest" image for ARM64-Macbooks with M-Chip
+# Use "gitlab/gitlab-ce" image for AMD64-Intel-Chips
 version: '3'
+
 services:
   gitlab:
-    image: 'gitlab/gitlab-ce:latest'
+    image: zengxs/gitlab:latest
+   #image: gitlab/gitlab-ce
     container_name: gitlab
-    restart: always
-    hostname: 'localhost'
-    environment:
-      GITLAB_OMNIBUS_CONFIG: |
-        external_url 'http://localhost:8929'
     ports:
-      - '8929:8929'
-      - '2224:22'
+      - "8080:80"
     volumes:
-      - './gitlab/config:/etc/gitlab'
-      - './gitlab/logs:/var/log/gitlab'
-      - './gitlab/data:/var/opt/gitlab'
+      - gitlab-data:/var/opt/gitlab
+      - gitlab-logs:/var/log/gitlab
+      - gitlab-config:/etc/gitlab
+    restart: always
+
+volumes:
+  gitlab-data:
+  gitlab-logs:
+  gitlab-config:
+
