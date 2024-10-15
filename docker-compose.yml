@@ -4,8 +4,8 @@ version: '3'
 
 services:
   gitlab:
-    image: zengxs/gitlab:latest
-   #image: gitlab/gitlab-ce
+    #image: zengxs/gitlab:latest
+    image: gitlab/gitlab-ce
     container_name: gitlab
     ports:
       - "8080:80"
@@ -14,7 +14,11 @@ services:
       - gitlab-logs:/var/log/gitlab
       - gitlab-config:/etc/gitlab
     restart: always
-
+  terraform:
+    image: hashicorp/terraform:0.12.21
+    volumes:
+      - .:/infra
+    working_dir: /infra
 volumes:
   gitlab-data:
   gitlab-logs:
