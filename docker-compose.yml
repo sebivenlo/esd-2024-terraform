@@ -1,6 +1,6 @@
 # Use "zengxs/gitlab:latest" image for ARM64-Macbooks with M-Chip
 # Use "gitlab/gitlab-ce" image for AMD64-Intel-Chips
-version: '3'
+version: '3.7'
 
 services:
   gitlab:
@@ -14,13 +14,17 @@ services:
       - gitlab-logs:/var/log/gitlab
       - gitlab-config:/etc/gitlab
     restart: always
+
   terraform:
     image: hashicorp/terraform:0.12.21
+    container_name: terraform
     volumes:
-      - .:/infra
+      - ./infra:/infra
     working_dir: /infra
+    command: ["terraform", "init"]
+    restart: 'no'  # Verhindert Neustart-Schleife
+
 volumes:
   gitlab-data:
   gitlab-logs:
   gitlab-config:
-
