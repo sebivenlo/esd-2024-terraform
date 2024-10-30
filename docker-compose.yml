@@ -1,6 +1,6 @@
 # Use "zengxs/gitlab:latest" image for ARM64-Macbooks with M-Chip
 # Use "gitlab/gitlab-ce" image for AMD64-Intel-Chips
-version: '3.7'
+
 
 services:
   gitlab:
@@ -21,8 +21,8 @@ services:
     volumes:
       - ./infra:/infra
     working_dir: /infra
-    command: ["terraform", "init"]
-    restart: 'no'  # Verhindert Neustart-Schleife
+    command: ["--version"]
+    restart: 'no'
 
 volumes:
   gitlab-data:
