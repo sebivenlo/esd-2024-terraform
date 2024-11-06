@@ -43,20 +43,20 @@
 2. Terraform: 
     - Initialize terraform for this project with:
        ```
-       docer compose -f deploy/docker-compose.yml run --rm terraform init
+       docer compose -f docker-compose.yml run --rm terraform init
        ```
     - Now you can start using terraform!
     - If you make changes to your configuration, you can review and generate an execution plan:   
        ```
-      docer compose -f deploy/docker-compose.yml run --rm  terraform plan
+      docer compose -f docker-compose.yml run --rm  terraform plan
        ```
     - To apply the changes permanently, run:
        ```
-      docer compose -f deploy/docker-compose.yml run --rm terraform apply
+      docer compose -f docker-compose.yml run --rm terraform apply
        ```
     - If you need to destroy the applied infrastructure, use:
        ```
-      docer compose -f deploy/docker-compose.yml run --rm  terraform destroy
+      docer compose -f docker-compose.yml run --rm  terraform destroy
        ```
 
 ## ESD template
