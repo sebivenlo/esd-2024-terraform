@@ -1,3 +1,3 @@
 # Put here your own gitlab personal access token!
-gitlab_token = ""
-gitlab_url = "http://localhost:8080/api/v4/"
+gitlab_token = "glpat-ZL2nESugMXjpVnoLvr_X"
+gitlab_url = "http://gitlab:80"

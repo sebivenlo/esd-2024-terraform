@@ -7,6 +7,8 @@ services:
     #image: zengxs/gitlab:latest
     image: gitlab/gitlab-ce
     container_name: gitlab
+    networks:
+      - gitlab-network
     ports:
       - "8080:80"
     volumes:
@@ -18,16 +20,20 @@ services:
   terraform:
     image: hashicorp/terraform:1.10.0-beta1
     container_name: terraform
+    networks:
+      - gitlab-network
     volumes:
      - ./terraform-gitlab:/terraform-gitlab
     working_dir: /terraform-gitlab
     restart: 'no'
-
- # environment:
-  #  - GITLAB_URL=${GITLAB_URL}
-   # - GITLAB_TOKEN=${GITLAB_TOKEN}
+    environment:
+    - GITLAB_URL= "http://gitlab:80"
+    - GITLAB_TOKEN= "glpat-ZL2nESugMXjpVnoLvr_X"
 
 volumes:
   gitlab-data:
   gitlab-logs:
   gitlab-config:
+
+networks:
+  gitlab-network:
