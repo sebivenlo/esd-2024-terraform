@@ -21,8 +21,11 @@ services:
     volumes:
       - ./infra:/infra
     working_dir: /infra
-    command: ["--version"]
     restart: 'no'
+
+  environment:
+    - GITLAB_URL=${GITLAB_URL}
+    - GITLAB_TOKEN=${GITLAB_TOKEN}
 
 volumes:
   gitlab-data:
