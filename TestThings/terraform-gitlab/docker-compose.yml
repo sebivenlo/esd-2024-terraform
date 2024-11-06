@@ -16,16 +16,16 @@ services:
     restart: always
 
   terraform:
-    image: hashicorp/terraform:0.12.21
+    image: hashicorp/terraform:1.10.0-beta1
     container_name: terraform
     volumes:
-      - ./infra:/infra
+      - .:/infra
     working_dir: /infra
     restart: 'no'
 
-  environment:
-    - GITLAB_URL=${GITLAB_URL}
-    - GITLAB_TOKEN=${GITLAB_TOKEN}
+  #environment:
+   # - GITLAB_URL=${GITLAB_URL}
+   # - GITLAB_TOKEN=${GITLAB_TOKEN}
 
 volumes:
   gitlab-data:
