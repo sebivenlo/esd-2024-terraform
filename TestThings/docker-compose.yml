@@ -4,8 +4,8 @@
 
 services:
   gitlab:
-    #image: zengxs/gitlab:latest
-    image: gitlab/gitlab-ce
+    image: zengxs/gitlab:latest
+    #image: gitlab/gitlab-ce
     container_name: gitlab
     ports:
       - "8080:80"
@@ -16,16 +16,16 @@ services:
     restart: always
 
   terraform:
-    image: hashicorp/terraform:0.12.21
+    image: hashicorp/terraform:1.10.0-beta1
     container_name: terraform
     volumes:
-      - ./infra:/infra
-    working_dir: /infra
+      - ./terraform-gitlab:/terraform-gitlab
+    working_dir: /terraform-gitlab
     restart: 'no'
 
-  environment:
-    - GITLAB_URL=${GITLAB_URL}
-    - GITLAB_TOKEN=${GITLAB_TOKEN}
+ # environment:
+  #  - GITLAB_URL=${GITLAB_URL}
+   # - GITLAB_TOKEN=${GITLAB_TOKEN}
 
 volumes:
   gitlab-data:
