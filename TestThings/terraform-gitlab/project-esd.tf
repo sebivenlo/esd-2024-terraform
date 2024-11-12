@@ -9,10 +9,10 @@ resource "gitlab_group" "esd" {
 }
 
 
-# Add user to group/project
+#Add user to group/project
 resource "gitlab_group_membership" "esd-group-member-example" {
   group_id      = gitlab_group.esd.id
-  user_id      = gitlab_user.example.id
+  user_id      = gitlab_user.users["example"].id
   access_level = "developer"
   expires_at   = "2024-12-31"
 }
