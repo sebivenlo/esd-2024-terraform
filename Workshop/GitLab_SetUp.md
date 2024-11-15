@@ -1,19 +1,3 @@
-# **Getting-Started**
-
-## Description
-
-### **Todo!!!**
-
-
-
-
-## Project Structure
-
-### **Todo!!!**
-
-
-
-
 ## **Setting up Development Environment**
 
 ### **Requirements**
@@ -39,34 +23,4 @@
        ```
        docker exec -it gitlab gitlab-rake "gitlab:password:reset[root]"
        ```
-
-2. Terraform: 
-    - Initialize terraform for this project with:
-       ```
-       docer compose -f docker-compose.yml run --rm terraform init
-       ```
-    - Now you can start using terraform!
-    - If you make changes to your configuration, you can review and generate an execution plan:   
-       ```
-      docer compose -f docker-compose.yml run --rm  terraform plan
-       ```
-    - To apply the changes permanently, run:
-       ```
-      docer compose -f docker-compose.yml run --rm terraform apply
-       ```
-    - If you need to destroy the applied infrastructure, use:
-       ```
-      docer compose -f docker-compose.yml run --rm  terraform destroy
-       ```
-
-## ESD template
-
-Please make sure all artifacts are in this GitHub repository.  
-That includes:
-
-- Code
-- Workshop materials
-- Presentation (if applicable)
-- References.
-- Docker (compose) file (if applicable)
-
+    - now login to GitLab at [localhost:8080](localhost:8080) with  username: "root" and your new password. 
