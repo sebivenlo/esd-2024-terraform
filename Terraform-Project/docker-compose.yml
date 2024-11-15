@@ -28,7 +28,6 @@ services:
     restart: 'no'
     environment:
     - GITLAB_URL= "http://gitlab:80"
-    - GITLAB_TOKEN= ""
 
 volumes:
   gitlab-data:
