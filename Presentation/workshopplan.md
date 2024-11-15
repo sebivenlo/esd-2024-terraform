@@ -17,5 +17,8 @@
 - GitLab erstellen
     - Readme als Guidline
 - Konfiguration von GitLab
-- 
+- User Add
+- Gruppe erstellen
+- Projekt in der Gruppe erstellen
+- User zu Gruppe/Project hinzufügen
 
