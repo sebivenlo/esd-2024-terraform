@@ -11,3 +11,5 @@ TestThings/.DS_Store
 TestThings/terraform-gitlab/.terraform.lock.hcl
 /TestThings/terraform-gitlab/.terraform
 .DS_Store
+/Terraform-Project/terraform-gitlab/.terraform
+Terraform-Project/terraform-gitlab/.terraform.lock.hcl
