@@ -1,0 +1,38 @@
+# Use "zengxs/gitlab:latest" image for ARM64-Macbooks with M-Chip
+# Use "gitlab/gitlab-ce" image for AMD64-Intel-Chips
+
+
+services:
+  gitlab:
+    #image: zengxs/gitlab:latest
+    image: gitlab/gitlab-ce
+    container_name: gitlab
+    networks:
+      - gitlab-network
+    ports:
+      - "8080:80"
+    volumes:
+      - gitlab-data:/var/opt/gitlab
+      - gitlab-logs:/var/log/gitlab
+      - gitlab-config:/etc/gitlab
+    restart: always
+
+  terraform:
+    image: hashicorp/terraform:1.10.0-beta1
+    container_name: terraform
+    networks:
+      - gitlab-network
+    volumes:
+     - ./terraform-gitlab:/terraform-gitlab
+    working_dir: /terraform-gitlab
+    restart: 'no'
+    environment:
+    - GITLAB_URL= "http://gitlab:80"
+
+volumes:
+  gitlab-data:
+  gitlab-logs:
+  gitlab-config:
+
+networks:
+  gitlab-network:
