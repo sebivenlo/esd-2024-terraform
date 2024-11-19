@@ -4,7 +4,8 @@
 
 services:
   gitlab:
-    image: ${GITLAB_IMAGE:-gitlab/gitlab-ce}
+    #image: zengxs/gitlab:latest
+    image: gitlab/gitlab-ce
     container_name: gitlab
     networks:
       - gitlab-network
