@@ -17,5 +17,5 @@
     docker compose -f docker-compose.yml run --rm  terraform destroy
     ```
 # Coding
-Here you can find Code snippets in order to configurate GitLab: \
+Here you can find Code snippets in order to configurate GitLab using Terraform: \
     https://registry.terraform.io/providers/gitlabhq/gitlab/latest/docs
