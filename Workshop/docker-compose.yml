@@ -4,8 +4,7 @@
 
 services:
   gitlab:
-    #image: zengxs/gitlab:latest
-    image: gitlab/gitlab-ce
+    image: ${GITLAB_IMAGE:-gitlab/gitlab-ce}
     container_name: gitlab
     networks:
       - gitlab-network
@@ -23,7 +22,7 @@ services:
     networks:
       - gitlab-network
     volumes:
-     - ./terraform-gitlab:/terraform-gitlab
+     - ./terraform-files:/terraform-gitlab
     working_dir: /terraform-gitlab
     restart: 'no'
     environment:
