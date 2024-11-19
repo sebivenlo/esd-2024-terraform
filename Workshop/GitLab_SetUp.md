@@ -12,3 +12,6 @@
        docker exec -it gitlab gitlab-rake "gitlab:password:reset[root]"
        ```
     - now login to GitLab at [localhost:8080](localhost:8080) with  username: "root" and your new password. 
+
+
+    [Back to Exercises](./Exercise.md)
