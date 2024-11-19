@@ -1,0 +1,23 @@
+{
+    "name": "Terraform",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "terraform",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "editor.formatOnPaste": false, 
+                "editor.formatOnType": false, 
+                "editor.formatOnSave": true, 
+                "editor.formatOnSaveMode": "file", 
+                "files.autoSave": "off" 
+            },
+            "extensions": [
+                "ms-azuretools.vscode-docker",
+                "4ops.terraform",
+                "hashicorp.terraform"
+            ]
+        }
+    },
+    "remoteUser": "root",
+    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}"
+}
