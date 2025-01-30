@@ -60,13 +60,13 @@ Terraform configuration example file to create Azure Resource Group with HCL lan
 ![Terraform_Azure_config_in_HCL.png](Retake-files/Terraform_Azure_config_in_HCL.png)  
 
 
-- Same configuration file written in C# for Azure Resources
+- Same configuration file written in C# for Azure Resources  
 ![Pulumi_CSharp.png](Retake-files/Pulumi_CSharp.png)  
 
   
 - Terraform typically stores its state in a local terraform.tfstate file (though best practice is to use a remote backend like Azure Blob or S3 for collaboration).    
 
-![img_2.png](img_2.png)   
+![Terraform_state_file.png](Retake-files/Terraform_state_file.png)  
 
 - Whereas Pulumi stores its state in the Pulumi Cloud by default, enabling “diff”-based reviews through its use of common development languages.
 
@@ -80,10 +80,11 @@ The command line interface to Terraform is the terraform command, which accepts 
 
 For Pulumi it is similar how the CLI works.
 To start working for Pulumi the command pulumi must be executed:
-![img.png](img.png)  
 
-Other main commands:   
-![img_1.png](img_1.png)  
+![Pulumbi_CLI_1.png](Retake-files/Pulumbi_CLI_1.png)  
+
+Other main commands:    
+![Pulumi_CLI_2.png](Retake-files/Pulumi_CLI_2.png)  
 
 
 ## Terraform vs OpenTofu differences
