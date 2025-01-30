@@ -1,8 +1,5 @@
 # IaC Competitors
 
- 
-
-
 ## Terraform 
 - Provider/Publisher: HashiCorp
 - Language: HCL (HashiCorp Configuration Language)
@@ -68,11 +65,12 @@ Terraform configuration example file to create Azure Resource Group with HCL lan
 
 ![Terraform_state_file.png](Retake-images/Terraform_state_file.png)  
 
-- Whereas Pulumi stores its state in the Pulumi Cloud by default, enabling “diff”-based reviews through its use of common development languages.
+- Whereas Pulumi stores its state in the Pulumi Cloud by default, enabling “diff”-based reviews through its use of common development languages. It allows state storage in S3, Azure Blob or local files, similar to Terraform.
 
 
 - When it comes to reusability, Terraform encourages the use of modules for organizing and sharing configurations, while Pulumi relies on standard programming constructs (functions, classes, packages) to enable code reuse, reflecting each tool’s approach to Infrastructure as Code.    
 
+- While Terraform has no build in secret encryption and needs external services like S3 for it, Pulumi has a build-in secret encryption which is stored securely in the Pulumi state. It allows also external services if wanted.
 
 - Basic CLI differences:
 The command line interface to Terraform is the terraform command, which accepts a number of subcommands such as terraform init or terraform plan.  
@@ -126,6 +124,23 @@ aws cloudformation delete-stack \
     --stack-name my-stack
 ```
 
+## Quick Pointers for Leaning Terraform
+If you want getting started and dive into advanced terraform operations, the registry and the official HashiCorp tutorials are excellent resources to help you master Terraform.
+
+- Official Registry
+    - [registry.terraform.io](https://registry.terraform.io/) is the central place to discover and share Terraform providers, modules, policies, and more.
+    - You can search by cloud provider (AWS, Azure, GCP) or functionality (e.g., Kubernetes, GitHub).
+- Tutorials & Guides
+    - [developer.hashicorp.com/terraform/tutorials](https://registry.terraform.io/) provides step-by-step tutorials, from beginner-level introductions to more advanced topics like modules and remote state.
+- Providers
+    - [registry.terraform.io/browse/providers](https://registry.terraform.io/) lists all official and community-managed providers. Each provider page includes documentation on usage, resource types, and examples.
+- Modules
+    - [registry.terraform.io/browse/modules](https://registry.terraform.io/) is where you can find reusable configurations (modules) for common tasks (e.g., VPC creation, AWS EC2 setup).
+    - Download or reference modules directly in your .tf files to keep code DRY (Don’t Repeat Yourself).
+- Policies:
+    - [registry.terraform.io/browse/policies](https://registry.terraform.io/) highlights policies that can be enforced to meet compliance or security requirements, often used with Terraform Enterprise or Terraform Cloud.
+
+
 ## Sources
 Terraform competitors:  
 https://spacelift.io/blog/terraform-alternatives  
@@ -142,9 +157,11 @@ https://spacelift.io/blog/terraform-vs-cloudformation
 https://www.env0.com/blog/terraform-vs-aws-cloudformation-an-in-depth-comparison
 
 Terraform:  
+https://www.terraform.io/
 https://registry.terraform.io/browse/modules    
 https://spacelift.io/blog/what-are-terraform-modules-and-how-do-they-work  
 https://developer.hashicorp.com/terraform/cli/commands
+https://spacelift.io/blog/terraform-secrets
 
 OpenTofu:  
 https://opentofu.org/docs/language/state/encryption/
@@ -155,8 +172,20 @@ Pulumi:
 https://www.pulumi.com/registry/  
 https://www.pulumi.com/docs/iac/cli/
 https://medium.com/@netopschic/provisioning-an-aws-ec2-instance-using-pulumi-34ff693a2d27
+https://www.pulumi.com/docs/iac/concepts/secrets/
+https://www.pulumi.com/tutorials/building-with-pulumi/secrets/
 
 AWS CloudFormation:  
 https://docs.aws.amazon.com/cli/latest/reference/cloudformation/  
 https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/service_code_examples.html  
+https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-secretsmanager-secret.html
+https://docs.aws.amazon.com/secretsmanager/latest/userguide/security-encryption.html
+
+Terraform Learn-Material:
+https://registry.terraform.io/
+https://developer.hashicorp.com/terraform/tutorials
+https://registry.terraform.io/browse/providers
+https://registry.terraform.io/browse/modules
+https://registry.terraform.io/browse/policies
+
 
