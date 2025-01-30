@@ -57,16 +57,16 @@
 
 - Terraform and Pulumi Language & Configurations difference: 
 Terraform configuration example file to create Azure Resource Group with HCL language.
-![Terraform_Azure_config_in_HCL.png](Retake-files/Terraform_Azure_config_in_HCL.png)  
+![Terraform_Azure_config_in_HCL.png](Retake-images/Terraform_Azure_config_in_HCL.png)  
 
 
 - Same configuration file written in C# for Azure Resources  
-![Pulumi_CSharp.png](Retake-files/Pulumi_CSharp.png)  
+![Pulumi_CSharp.png](Retake-images/Pulumi_CSharp.png)  
 
   
 - Terraform typically stores its state in a local terraform.tfstate file (though best practice is to use a remote backend like Azure Blob or S3 for collaboration).    
 
-![Terraform_state_file.png](Retake-files/Terraform_state_file.png)  
+![Terraform_state_file.png](Retake-images/Terraform_state_file.png)  
 
 - Whereas Pulumi stores its state in the Pulumi Cloud by default, enabling “diff”-based reviews through its use of common development languages.
 
@@ -76,15 +76,15 @@ Terraform configuration example file to create Azure Resource Group with HCL lan
 
 - Basic CLI differences:
 The command line interface to Terraform is the terraform command, which accepts a number of subcommands such as terraform init or terraform plan.  
-![Terraform CLI.png](Retake-files/Terraform%20CLI.png)  
+![Terraform CLI.png](Retake-images/Terraform%20CLI.png)  
 
 For Pulumi it is similar how the CLI works.
 To start working for Pulumi the command pulumi must be executed:
 
-![Pulumbi_CLI_1.png](Retake-files/Pulumbi_CLI_1.png)  
+![Pulumbi_CLI_1.png](Retake-images/Pulumbi_CLI_1.png)  
 
 Other main commands:    
-![Pulumi_CLI_2.png](Retake-files/Pulumi_CLI_2.png)  
+![Pulumi_CLI_2.png](Retake-images/Pulumi_CLI_2.png)  
 
 
 ## Terraform vs OpenTofu differences
@@ -94,7 +94,7 @@ Since OpenTofu is fork of terraform and uses also the terraform eco system there
 
 Here a minimal configuration how to use the encryption:
 
-![OpenTofu_encryption.png](Retake-files/OpenTofu_encryption.png)
+![OpenTofu_encryption.png](Retake-images/OpenTofu_encryption.png)
 
 - The OpenTofu looks exactly like terraform, because they both using HCL Language.
 
