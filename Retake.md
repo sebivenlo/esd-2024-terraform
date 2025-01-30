@@ -143,37 +143,37 @@ If you want getting started and dive into advanced terraform operations, the reg
 
 ## Sources
 Terraform competitors:  
-https://spacelift.io/blog/terraform-alternatives  
+https://spacelift.io/blog/terraform-alternatives   
 
-Pulumi vs Terraform:  
-https://spacelift.io/blog/pulumi-vs-terraform  
-https://www.pulumi.com/docs/iac/concepts/vs/terraform/  
+Pulumi vs Terraform:   
+https://spacelift.io/blog/pulumi-vs-terraform   
+https://www.pulumi.com/docs/iac/concepts/vs/terraform/   
 
 OpenTofu vs Terraform:  
-https://spacelift.io/blog/opentofu-vs-terraform  
+https://spacelift.io/blog/opentofu-vs-terraform    
 
 ClaudFormation vs Terraform:  
-https://spacelift.io/blog/terraform-vs-cloudformation  
-https://www.env0.com/blog/terraform-vs-aws-cloudformation-an-in-depth-comparison
+https://spacelift.io/blog/terraform-vs-cloudformation    
+https://www.env0.com/blog/terraform-vs-aws-cloudformation-an-in-depth-comparison  
 
 Terraform:  
-https://www.terraform.io/
-https://registry.terraform.io/browse/modules    
-https://spacelift.io/blog/what-are-terraform-modules-and-how-do-they-work  
-https://developer.hashicorp.com/terraform/cli/commands
-https://spacelift.io/blog/terraform-secrets
+https://www.terraform.io/  
+https://registry.terraform.io/browse/modules     
+https://spacelift.io/blog/what-are-terraform-modules-and-how-do-they-work   
+https://developer.hashicorp.com/terraform/cli/commands  
+https://spacelift.io/blog/terraform-secrets  
 
 OpenTofu:  
-https://opentofu.org/docs/language/state/encryption/
-https://opentofu.org/docs/cli/commands/  
-https://opentofu.org/
+https://opentofu.org/docs/language/state/encryption/  
+https://opentofu.org/docs/cli/commands/   
+https://opentofu.org/  
 
 Pulumi:  
-https://www.pulumi.com/registry/  
-https://www.pulumi.com/docs/iac/cli/
-https://medium.com/@netopschic/provisioning-an-aws-ec2-instance-using-pulumi-34ff693a2d27
-https://www.pulumi.com/docs/iac/concepts/secrets/
-https://www.pulumi.com/tutorials/building-with-pulumi/secrets/
+https://www.pulumi.com/registry/    
+https://www.pulumi.com/docs/iac/cli/  
+https://medium.com/@netopschic/provisioning-an-aws-ec2-instance-using-pulumi-34ff693a2d27  
+https://www.pulumi.com/docs/iac/concepts/secrets/  
+https://www.pulumi.com/tutorials/building-with-pulumi/secrets/  
 
 AWS CloudFormation:  
 https://docs.aws.amazon.com/cli/latest/reference/cloudformation/  
