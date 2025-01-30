@@ -87,7 +87,9 @@ Other main commands:
 
 ## Terraform vs OpenTofu differences
 Since OpenTofu is fork of terraform and uses also the terraform eco system there are only few differences:
-- OpenTofu Project was launched as a free alternative to Terraform after Terraform changed to BSL license. It mirrows terraform as fork but has not the BSL license restrictions.
+- OpenTofu Project was launched as a free alternative to Terraform after Terraform changed to BSL license. It mirrors terraform as fork but has not the BSL license restrictions.
+- While terraform is controlled by HashiCorp,OpenTofu's development is completly Community-driven. It has his independent roadmap and its aiming for a transparent model.
+- For Command & Syntax, OpenTofu uses the opentofu CLI but mirrors Terraform syntax and modules 
 - OpenTofu has its own encryption of the status files, which is not the case with Terraform.
 
 Here a minimal configuration how to use the encryption:
