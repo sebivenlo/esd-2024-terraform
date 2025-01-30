@@ -52,8 +52,8 @@
 
 ## Terraform vs Pulumi differences
 
-- Terraform and Pulumi Language & Configurations difference: 
-Terraform configuration example file to create Azure Resource Group with HCL language.
+- Terraform and Pulumi Language & Configurations difference:   
+Terraform configuration example file to create Azure Resource Group with HCL language.  
 ![Terraform_Azure_config_in_HCL.png](Retake-images/Terraform_Azure_config_in_HCL.png)  
 
 
@@ -181,11 +181,11 @@ https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/service_code_exam
 https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-secretsmanager-secret.html
 https://docs.aws.amazon.com/secretsmanager/latest/userguide/security-encryption.html
 
-Terraform Learn-Material:
-https://registry.terraform.io/
-https://developer.hashicorp.com/terraform/tutorials
-https://registry.terraform.io/browse/providers
-https://registry.terraform.io/browse/modules
-https://registry.terraform.io/browse/policies
+Terraform Learn-Material:  
+https://registry.terraform.io/  
+https://developer.hashicorp.com/terraform/tutorials  
+https://registry.terraform.io/browse/providers  
+https://registry.terraform.io/browse/modules  
+https://registry.terraform.io/browse/policies  
 
 
